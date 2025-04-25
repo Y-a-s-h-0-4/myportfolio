@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Download } from 'lucide-react';
 import { Button } from './ui/button';
@@ -73,6 +72,7 @@ const HeroSection = () => {
         <Button 
           variant="outline" 
           className="rounded-full px-6 py-6 glass-effect border border-neon-teal/30 hover:border-neon-teal hover:neon-shadow-teal hover-lift transition-all duration-300 group"
+          onClick={() => window.open('https://drive.google.com/file/d/1pUHzWrbZiEc5EcYiMaxDw-ozsPoZDRj9/view?usp=sharing', '_blank')}
         >
           <span className="mr-2">Resume</span>
           <Download size={18} className="group-hover:translate-y-0.5 transition-transform duration-300" />
